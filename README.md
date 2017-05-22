@@ -7,7 +7,7 @@ This keep centralized config in squid with high performance and no reload for ne
 # Use to match:
         acl porn external aj_acl
         acl mylist external aj_acl
-# Mange lists with 
+# Manage lists with 
         acl.pl add porn url sexy.com
         acl.pl del porn url sexy.com
         acl.pl purge porn
