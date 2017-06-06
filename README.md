@@ -4,13 +4,13 @@ This keep centralized config in squid with high performance and no reload for ne
 
 # Load in squid.conf with:
         external_acl_type aj_acl %ACL %DST %URI /path/of/file/aj_helper.pl
-# Use to match:
+# Use to match, in squid.conf:
         acl porn external aj_acl
         acl mylist external aj_acl
-# Manage lists with 
-        acl.pl add porn url sexy.com
-        acl.pl del porn url sexy.com
-        acl.pl purge porn
-        acl.pl purge porn domain
-        acl.pl list
-        acl.pl list porn er
+# Manage lists in shell with 
+        #> ./acl.pl add porn url sexy.com
+        #> ./acl.pl del porn url sexy.com
+        #> ./acl.pl purge porn
+        #> ./acl.pl purge porn domain
+        #> ./acl.pl list
+        #> ./acl.pl list porn er
